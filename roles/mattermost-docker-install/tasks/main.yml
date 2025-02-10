@@ -32,6 +32,6 @@
     src: env.j2
     dest: "{{ path }}/.env"
 
-- name: project-compose up -d mattermost
-  ansible.builtin.shell: "project-compose -f {{ path }}/project-compose.yml -f {{ path }}/project-compose.without-nginx.yml up -d"
+- name: docker-compose up -d mattermost
+  ansible.builtin.shell: "docker-compose -f {{ path }}/docker-compose.yml -f {{ path }}/docker-compose.without-nginx.yml up -d"
   ignore_errors: true
