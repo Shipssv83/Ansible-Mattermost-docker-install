@@ -89,7 +89,7 @@ vars:
   mattermost_url: '{{ host }}'
   timezone: "Europe/Warsaw"
   mattermost_db_user: "mattermost"
-  mattermost_db_pass: "0gtfKcpjz5tBNm"
+  mattermost_db_pass: "PASSWORD"
   mattermost_db_database: "mattermost_db"
 ```
 
